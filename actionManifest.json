@@ -1,16 +1,16 @@
 {
-    "id": "com.microsoft.sampleapp.survey.papatne.1",
-    "name": "Survey(papatne INT React)",
-    "description": "Custom Survey(papatne-react)",
+    "id": "<packageId>",
+    "name": "Survey",
+    "description": "Ask a question and get people's opinion",
     "showLoadingIndicator": true,
     "provider": {
-        "name": "Microsoft",
-        "websiteUrl": "https://www.microsoft.com/",
-        "privacyUrl": "https://www.microsoft.com/privacy",
-        "termsOfUseUrl": "https://www.microsoft.com/app-tos"
+        "name": "<name>",
+        "websiteUrl": "<websiteUrl>",
+        "privacyUrl": "<privacyUrl>",
+        "termsOfUseUrl": "<termsOfUseUrl>"
     },
     "icon": "images/appIcon.png",
-    "version": "1.0.1",
+    "version": "1.0.0",
     "actionModel": "actionModel.json",
     "views": {
         "CardView": {
