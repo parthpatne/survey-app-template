@@ -1,0 +1,10 @@
+@import "./../../../scss/mixin.scss";
+
+.settings-icon {
+  @include resolve-dir(margin-right, 8px);
+}
+
+.settings-footer {
+  cursor: pointer;
+  display: flex;
+}

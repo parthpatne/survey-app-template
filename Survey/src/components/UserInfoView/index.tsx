@@ -1,0 +1,1 @@
+export {UserInfoView, IUserInfoViewProps} from './UserInfoView';

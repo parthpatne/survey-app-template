@@ -1,0 +1,261 @@
+@import './../scss/common.scss';
+
+.grid-template-layout-focuszone {
+    height: 100%;
+}
+
+.personal-home-container {
+  bottom: 0 !important;
+  border-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.personal-home-container::before {
+  border-top: 0px !important;
+}
+
+.homepage-mysurvey-bar{
+    margin-top:30px;
+}
+
+.grid-draft-layout-focuszone {
+    height:100%;
+}
+
+.text-mysurvey {
+  font-size: 18px;
+  font-family: "Segoe UI";
+  color: $black-color;
+}
+
+.component-layout {
+  margin-top: 8px;
+  padding: 7px;
+  height: 220px;
+  width: 338px;
+  background-color: white;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  position: relative;
+  &:focus{
+    background-color: lightblue;
+  }
+}
+
+.template-component-layout{
+    @include resolve-dir( margin-right, 30px);
+    margin-top:8px;
+    padding: 7px;
+    height: 220px;
+    width: 338px;
+    background-color: white;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
+    &:focus{
+      background-color: lightblue;
+    }
+}
+
+.template-page-text{
+    margin-top:20px;
+}
+
+.cover-image {
+  width: fit-content;
+  height: 84px !important;
+  object-fit: cover;
+  overflow: auto;
+}
+
+.create-survey-cover-image {
+  height: 84px !important;
+  width: -webkit-fill-available;
+  object-fit: cover;
+}
+
+.cover-image-div {
+  position: absolute;
+  height: 84px;
+  top: 7px;
+  width: calc(100% - 14px);
+}
+
+.component-info-layout {
+    position: absolute;
+    bottom: 0px;
+    width: calc(100% - 14px);
+    min-height: 93px;
+    padding-top:8px;
+}
+
+.component-info-title {
+  padding-bottom: 4px;
+}
+
+.container {
+  position: relative;
+}
+
+.draft-band-color {
+  background-color: #1e5383 !important;
+}
+
+.closed-band-color {
+  background-color: #237b4b !important;
+}
+
+.active-band-color {
+  background-color: #e28f08 !important;
+}
+
+.channel-picker-dialog-overlay {
+  .desktop-web & {
+    background-color: rgba(37, 36, 36, 0.75) !important;
+  }
+}
+
+.survey-status {  
+    position: absolute;
+    top: 98px; 
+    @include resolve-dir(left, 6px);
+    width:  calc(100% - 14px);
+    justify-content: flex-end;
+    background-color: #eeeeee;
+    border-radius: 0px;
+    padding: 2px 8px 2px 0px;
+}
+
+.template-status {
+  height: 16px;
+}
+
+.channel-picker-radio-button > div {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  @include resolve-dir(padding-left, 40px);
+}
+
+.channel-picker-body {
+  padding: 5px;
+}
+
+.channel-picker-down-icon{
+    position: absolute;
+    @include resolve-dir(right, 23px);
+}
+
+.choose-channel {
+  color: $brand-color;
+}
+
+.header-menu {
+  padding-top: 5px;
+  @include resolve-dir(padding-right, 14px);
+  color: $brand-color !important;
+}
+
+.header-setting {
+  @include resolve-dir(margin-left, 16px);
+  @include resolve-dir(margin-right, 6px);
+}
+
+.secondary-button {
+  color: $brand-color !important;
+  border-color: $brand-color !important;
+  box-shadow: unset;
+}
+
+.channel-picker-item {
+  width: 422px;
+  cursor: pointer;
+}
+
+.personal-picker-dialog {
+  width: 500px !important;
+  margin: 100px !important;
+}
+
+.channel-picker-layout {
+  height: 500px;
+}
+
+.channel-picker-layout > .recycler-container > div {
+  overflow: auto !important;
+}
+
+.more-icon {
+  position: absolute;
+  @include resolve-dir(right, 7px);
+  bottom: 16px;
+}
+
+.view-all-templates {
+  font-family: "SegoeUI";
+  font-size: 14px;
+  color: $brand-color;
+}
+
+.down-up-icon {
+  color: $brand-color;
+  @include resolve-dir(margin-right,30px);
+}
+
+.start-survey {
+  font-size: 18px;
+  font-family: "Segoe UI";
+  color: $black-color;
+}
+
+.drop-down-bg-color > div {
+  background-color: white;
+}
+
+.bg-color{
+    @include resolve-dir(margin-right,30px);
+}
+
+.bg-color > input {
+  background-color: white;
+}
+
+.header-container {
+  position: fixed;
+  padding: 0px 32px 2px 32px;
+  width: 100%;
+  height: $header-height;
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+  top: 0px;
+  background: white;
+  z-index: 1;
+  @include resolve-dir(left, 0px);
+}
+
+.personal-app-body {
+  @include main-margin();
+  padding-top: 12px;
+  width: 836px;
+  background: white;
+  top: $header-height;
+  bottom: $footer-height;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  @include resolve-dir(left, 50%);
+  transform: translateX(-50%);
+  position: fixed;
+  display: block !important;
+  overflow-x: hidden;
+  overflow-y: overlay;
+}
+
+.personal-footer-layout {
+  position: fixed;
+  @include resolve-dir(padding-right,32px);
+  width: 100%;
+  height: $footer-height;
+  align-items: center;
+  display: flex;
+  bottom: 0px;
+  background: white;
+}

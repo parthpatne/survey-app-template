@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+      "experimentalDecorators": true,
+      "moduleResolution": "node",
+      "target": "es5",
+      "jsx": "react",
+      "baseUrl": ".",
+      "lib": ["dom", "dom.iterable", "esnext"]
+    }
+  }
+  
